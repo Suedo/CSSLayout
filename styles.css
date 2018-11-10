@@ -1,3 +1,30 @@
+.float-container {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* comment this ":after" block to understand what clearing floats does */
+.float-container:after {
+    content: "floats cleared";
+    display: block;
+    clear: both;
+    border: 1px red solid;
+}
+
+.fl-elem {
+    background-color: rgb(151, 194, 194);
+    float: right;
+    width: 20%;
+    border: 1px green solid;
+}
+
+.norm {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
 h1,
 a {
     margin: 20;
@@ -20,27 +47,4 @@ a {
     text-decoration: none;
     padding: 20;
 
-}
-
-.float-container {
-    height: 50%;
-    display: block;
-    margin: 10px;    
-}
-
-.fl-elem {
-    background-color: rgb(151, 194, 194);
-    float: right;
-    width: 20%;
-    height: 50%;
-    margin: 1%;
-    padding: 1%;
-    border: 1px green solid;
-}
-
-.norm {
-    height: 50%;
-    display: block;
-    margin: 0;
-    padding: 0;
 }
