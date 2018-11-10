@@ -1,12 +1,14 @@
 .float-container {
     display: block;
+    height: 50%;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    padding-bottom: 25px;
 }
 
 /* comment this ":after" block to understand what clearing floats does */
 .float-container:after {
-    content: "floats cleared";
+    content: "floats getting cleared here";
     display: block;
     clear: both;
     border: 1px red solid;
@@ -16,6 +18,8 @@
     background-color: rgb(151, 194, 194);
     float: right;
     width: 20%;
+    margin: 0px;
+    height: 100%;
     border: 1px green solid;
 }
 
@@ -26,7 +30,7 @@
 }
 
 h1,
-a {
+a, p {
     margin: 20;
     padding: 10;
 }
