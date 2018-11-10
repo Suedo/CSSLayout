@@ -7,9 +7,6 @@ a {
 h1 {
     background-color: beige;
     border: 1px solid black; 
-    /* These are specified above in the common area, so no longer needed here */
-    /* margin: 20; */
-    /* padding: 10; */
 
 }
 
@@ -21,7 +18,29 @@ a {
     /* block scope prevents superimposition/sharing of allocated margin  */
     display: inline-block;
     text-decoration: none;
-    /* margin: 20; */
     padding: 20;
 
+}
+
+.float-container {
+    height: 50%;
+    display: block;
+    margin: 10px;    
+}
+
+.fl-elem {
+    background-color: rgb(151, 194, 194);
+    float: right;
+    width: 20%;
+    height: 50%;
+    margin: 1%;
+    padding: 1%;
+    border: 1px green solid;
+}
+
+.norm {
+    height: 50%;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
