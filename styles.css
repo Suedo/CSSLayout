@@ -52,3 +52,35 @@ a {
     padding: 20;
 
 }
+
+.columns{
+    height: 50%;
+}
+
+.columns:after {
+    content: "floats getting cleared here";
+    display: block;
+    clear: both;
+    border: 1px yellowgreen dotted;
+}
+
+section, aside {
+    float: left;
+    width: 46%;
+    margin: 1%;
+    padding: 1%;
+    height: 100%;
+    background-color: rgb(226, 226, 226);
+}
+
+section>p, aside>p {
+    padding: 0;
+    margin: 0;
+}
+
+.img{
+    /* 
+    TODO: These aren't working for the image in the aside
+    margin-top: 10px;
+    padding: 10px; */
+}
