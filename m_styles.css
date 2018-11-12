@@ -32,3 +32,15 @@ section, aside {
     padding: 1%;
     background-color: rgb(237, 237, 237);
 }
+
+.textCol {
+    margin: 10px;
+    padding: 5px;
+}
+
+.textCol p {
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 1px solid rosybrown;
+    text-align: justify;
+}
